@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="destination_styles.css">
+    <link rel="stylesheet" href="styles.css">
+    <title>TravelEase - New York City, USA</title>
+
+    <style>
+        body {
+            color: white;
+            font-family: Arial, sans-serif;
+            background-color: #004D7A;
+        }
+
+        header nav {
+            padding: 20px;
+        }
+
+        .destination-detail {
+            padding: 20px;
+        }
+
+        .destination-detail h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .content-wrapper {
+            display: flex;
+            gap: 20px;
+        }
+
+        .destination-image {
+            max-width: 50%;
+            object-fit: cover;
+        }
+
+        .text-content {
+            padding: 20px;
+            flex: 1;
+        }
+
+        .rating-description,
+        .booking-details {
+            margin-bottom: 20px;
+        }
+
+        .buttons {
+            display: flex;
+            gap: 20px;
+        }
+
+        main a {
+            padding: 10px 15px;
+            border: 1px solid white;
+            text-decoration: none;
+            color: white;
+            border-radius: 5px;
+            background-color: #2980b9;
+        }
+
+        main a:hover {
+            background-color: white;
+            color: #333;
+        }
+
+        @media (max-width: 600px) {
+
+            .content-wrapper {
+                display: flex;
+                flex-direction: column;
+                gap: 20px; 
+                align-items: center; 
+            }
+
+            .destination-image, .text-content {
+                width: 100%;
+            }
+
+            .text-content {
+                padding: 20px 0;
+            }
+
+            .text-content, .rating-description, .booking-details {
+                display: block; 
+            }
+        }        
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <a href="#" class="brand">TravelEase</a>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#">Register</a></li>
+                <li><a href="#">Sign in</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="destination-detail">
+            <h1>New York City, USA</h1>
+            <div class="content-wrapper">
+                <img src="images/nyc.jpg" alt="New York City, USA" class="destination-image">
+                <div class="text-content">
+                    <div class="rating-description">
+                        <p><strong>Rating: </strong>8.3/10</p><br>
+                        <p class="description">
+                            New York City, often simply called "New York," is a bustling, vibrant, and iconic metropolis that never sleeps. As one of the world's most famous cities,
+                             it's a melting pot of cultures, a center for finance, art, fashion, and entertainment. Visitors can explore the towering skyscrapers of Manhattan,
+                              including the Empire State Building, take a leisurely stroll through Central Park, or catch a Broadway show in the Theater District. The city's diverse 
+                              neighborhoods offer everything from gourmet dining to street food, and its museums, like the Metropolitan Museum of Art and the Museum of Modern Art, 
+                              house some of the world's most valuable treasures. In New York, there's always something happening, making it a city that truly has something for everyone.
+                        </p>
+                    </div>
+                    <div class="booking-details">
+                        <p><strong>Departure:</strong> <input type="date" id="departure-date"></p>
+                        <p><strong>Return:</strong> <input type="date" id="return-date"></p>
+                        <p class="price">$1800 CAD</p>
+                        <p class="package-details">5 Day Package</p>
+                    </div>
+                    <div class="buttons">
+                        <a href="index.html" class="back-button">Back</a>
+                        <a href="#" class="checkout-button">Checkout</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
