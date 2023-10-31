@@ -7,89 +7,6 @@
     <link rel="stylesheet" href="destination_styles.css">
     <link rel="stylesheet" href="styles.css">
     <title>TravelEase - New York City, USA</title>
-
-    <style>
-        body {
-            color: white;
-            font-family: Arial, sans-serif;
-            background-color: #004D7A;
-        }
-
-        header nav {
-            padding: 20px;
-        }
-
-        .destination-detail {
-            padding: 20px;
-        }
-
-        .destination-detail h1 {
-            font-size: 2.5em;
-            margin-bottom: 20px;
-        }
-
-        .content-wrapper {
-            display: flex;
-            gap: 20px;
-        }
-
-        .destination-image {
-            max-width: 50%;
-            object-fit: cover;
-        }
-
-        .text-content {
-            padding: 20px;
-            flex: 1;
-        }
-
-        .rating-description,
-        .booking-details {
-            margin-bottom: 20px;
-        }
-
-        .buttons {
-            display: flex;
-            gap: 20px;
-        }
-
-        main a {
-            padding: 10px 15px;
-            border: 1px solid white;
-            text-decoration: none;
-            color: white;
-            border-radius: 5px;
-            background-color: #2980b9;
-        }
-
-        main a:hover {
-            background-color: white;
-            color: #333;
-        }
-
-        @media (max-width: 600px) {
-
-            .content-wrapper {
-                display: flex;
-                flex-direction: column;
-                gap: 20px; 
-                align-items: center; 
-            }
-
-            .destination-image, .text-content {
-                width: 100%;
-            }
-
-            .text-content {
-                padding: 20px 0;
-            }
-
-            .text-content, .rating-description, .booking-details {
-                display: block; 
-            }
-        }        
-
-    </style>
 </head>
 
 <body>
@@ -124,8 +41,15 @@
                         </p>
                     </div>
                     <div class="booking-details">
-                        <p><strong>Departure:</strong> <input type="date" id="departure-date"></p>
-                        <p><strong>Return:</strong> <input type="date" id="return-date"></p>
+                        <p>
+                            <label for="departure-date"><strong>Departure:</strong></label>
+                            <input type="date" id="departure-date" aria-label="Select departure date">
+                        </p>
+                        
+                        <p>
+                            <label for="return-date"><strong>Return:</strong></label>
+                            <input type="date" id="return-date" aria-label="Select return date">
+                        </p>
                         <p class="price">$1800 CAD</p>
                         <p class="package-details">5 Day Package</p>
                     </div>
